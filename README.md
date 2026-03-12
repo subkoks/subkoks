@@ -13,11 +13,11 @@
 
 <h4 align="center">GitHub Stats</h4>
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=subkoks&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&icon_color=238636" height="150">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subkoks&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="150">
+<img src="https://github-readme-stats.vercel.app/api?username=subkoks&show_icons=true&bg_color=161b22&title_color=c9d1d9&text_color=8b949e&icon_color=238636&border_color=30363d&border_radius=8&count_private=true&include_all_commits=true" height="150">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subkoks&layout=compact&bg_color=161b22&title_color=c9d1d9&text_color=8b949e&border_color=30363d&border_radius=8&langs_count=6" height="150">
 </p>
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=subkoks&theme=github-dark-blue&hide_border=true" height="150">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=subkoks&background=161b22&border=30363d&stroke=30363d&ring=238636&fire=238636&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e" height="150">
 </p>
 
 <div align="center">
