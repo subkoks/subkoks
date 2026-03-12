@@ -1,9 +1,8 @@
 <div align="center">
 
-# Hi, I'm Blackterminal
-
-**Micro soldering | Electronics | Vibe Coding | Crypto**
-<br>
+<h2>Hi, I'm Blackterminal</h2>
+<sub>Micro soldering | Electronics | Vibe Coding | Crypto</sub>
+<br><br>
 [![Twitter](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://twitter.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
 
