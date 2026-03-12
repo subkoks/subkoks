@@ -2,14 +2,11 @@
 
 # Hi, I'm Blackterminal
 
-**Micro soldering | Electronics | Vibe Coding | Crypto**
-<br>
 [![Twitter](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://twitter.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
 
 </div>
 
-<h4 align="center">About</h4>
 <p align="center">Micro soldering - Electronic | Coding - Development | Music production / Sound Design | Crypto stuff - Trading / Development</p>
 
 <h4 align="center">GitHub Stats</h4>
