@@ -1,6 +1,7 @@
 <div align="center">
 
 # Hi, I'm Blackterminal
+
 **Micro soldering | Electronics | Vibe Coding | Crypto**
 <br>
 [![Twitter](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://twitter.com/Subkoks)
@@ -25,10 +26,11 @@
 <div align="center">
 
 #### Connect
+
 Twitter: [@Subkoks](https://twitter.com/Subkoks) | Location: Solana ecosystem
 <br>
-*Coding meets technical precision*
-<br>
+_Coding meets technical precision_
+<br><br>
 ![Profile Views](https://komarev.com/ghpvc/?username=subkoks&color=238636&style=flat-square&label=views)
 
 </div>
