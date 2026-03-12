@@ -22,8 +22,6 @@
 
 <div align="center">
 
-#### Connect
-
 Twitter: [@Subkoks](https://twitter.com/Subkoks) | Location: Solana ecosystem
 <br>
 _Coding meets technical precision_
