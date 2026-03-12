@@ -13,10 +13,7 @@
 
 ### About
 
-- Hardware -- Micro soldering & electronics repair
-- Software -- Python, TypeScript, automation, bots
-- Blockchain -- Solana development, crypto tools, Web3
-- Creative -- Music production & sound design
+Micro soldering - Electronic | Coding - Development | Music production / Sound Design | Crypto stuff - Trading / Development
 
 ---
 
@@ -38,11 +35,11 @@
 
 <div align="center">
 
-Twitter: [@Subkoks](https://twitter.com/Subkoks) | Location: Solana ecosystem | Interests: Crypto, Web3, Dev, Bots
+Twitter: [@Subkoks](https://twitter.com/Subkoks) | Location: Solana ecosystem
 
 ---
 
-*Vibe coding meets technical precision*
+*Coding meets technical precision*
 
 ![Profile Views](https://komarev.com/ghpvc/?username=subkoks&color=238636&style=flat-square&label=views)
 
