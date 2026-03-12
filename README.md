@@ -8,10 +8,10 @@
 
 </div>
 
-#### About
-Micro soldering - Electronic | Coding - Development | Music production / Sound Design | Crypto stuff - Trading / Development
+<h4 align="center">About</h4>
+<p align="center">Micro soldering - Electronic | Coding - Development | Music production / Sound Design | Crypto stuff - Trading / Development</p>
 
-#### GitHub Stats
+<h4 align="center">GitHub Stats</h4>
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=subkoks&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&icon_color=238636" height="150">
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subkoks&layout=compact&theme=github_dark&hide_border=true&langs_count=6" height="150">
