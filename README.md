@@ -6,6 +6,7 @@ Local-first dev tooling, agent infrastructure, and Solana automation.
 
 [![X](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://x.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
+[![Followers](https://img.shields.io/github/followers/subkoks?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=238636&label=followers)](https://github.com/subkoks?tab=followers)
 
 </div>
 
@@ -32,11 +33,6 @@ Local-first dev tooling, agent infrastructure, and Solana automation.
 Coding agents · local automation · Solana trading and analytics tooling · hardware reverse-engineering · micro-soldering.
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=subkoks&show_icons=true&bg_color=161b22&title_color=c9d1d9&text_color=8b949e&icon_color=238636&border_color=30363d&border_radius=8&count_private=true&include_all_commits=true&cache_seconds=86400" height="150" alt="GitHub stats">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subkoks&layout=compact&bg_color=161b22&title_color=c9d1d9&text_color=8b949e&border_color=30363d&border_radius=8&langs_count=6&cache_seconds=86400" height="150" alt="Top languages">
-
-<br><br>
 
 [X / Twitter](https://x.com/Subkoks) · [GitHub](https://github.com/subkoks)
 
