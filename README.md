@@ -3,7 +3,7 @@
 # Blackterminal
 
 Building AI coding agent infrastructure, developer tools, and Solana automation.  
-Focused on Web3, crypto systems, and day trading automation.
+Focused on Web3, crypto systems, trading automation, and lightweight apps & scripts.
 
 [![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=7aa2f7&line=00e5ff&point=7c3aed&area=true&area_color=00e5ff&title_color=a78bfa&hide_border=true&custom_title=Neural%20Contribution%20Stream%20(Last%2012%20Months))](https://github.com/subkoks)
 
