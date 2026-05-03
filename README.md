@@ -7,6 +7,8 @@ Focused on Web3, crypto systems, trading automation, and lightweight apps & scri
 
 [![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=c9d1d9&line=2ea043&point=238636&area=true&area_color=2ea043&title_color=2ea043&hide_border=true&custom_title=Coding%20activity%20(Last%2012%20Months))](https://github.com/subkoks)
 
+[![About Me](https://img.shields.io/badge/About%20Me-repo-238636?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/subkoks/about-me)
+
 [![X](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://x.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
 [![Followers](https://img.shields.io/github/followers/subkoks?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=238636&label=followers)](https://github.com/subkoks?tab=followers)
@@ -17,6 +19,7 @@ Focused on Web3, crypto systems, trading automation, and lightweight apps & scri
 
 ### Currently building
 
+- [**About Me**](https://github.com/subkoks/about-me) — dedicated “about” page repo (this `subkoks/subkoks` repo remains the profile README host).
 - [**BSELA**](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI) — local control plane that learns from coding-AI sessions: captures, detects errors, distills lessons, proposes `AGENTS.md` updates.
 - [**agents-md**](https://github.com/subkoks/agents-md) — canonical, cross-editor agent rule system on the GOTCHA framework, with a Solana / web3 skill pack.
 - [**apple-all-schematic**](https://github.com/subkoks/apple-all-schematic) — Apple schematic downloader and boardview downloader for microsoldering repair workflows.
