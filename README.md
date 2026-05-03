@@ -2,7 +2,7 @@
 
 # Blackterminal
 
-Local-first developer tools, coding agent infrastructure, and Solana automation.
+AI developer tools building, coding agent infrastructure, and Crypto & Solana automation.
 
 [![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=7aa2f7&line=00e5ff&point=7c3aed&area=true&area_color=00e5ff&title_color=a78bfa&hide_border=true&custom_title=Neural%20Contribution%20Stream%20(Last%2012%20Months))](https://github.com/subkoks)
 
