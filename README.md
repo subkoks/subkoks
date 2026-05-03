@@ -28,6 +28,10 @@ Local-first developer tools, coding agent infrastructure, and Solana automation.
 [![Solana](https://img.shields.io/badge/-Solana-9945FF?style=flat&logo=solana&logoColor=white&labelColor=0d1117&color=0d1117)](https://solana.com/)
 [![macOS](https://img.shields.io/badge/-macOS-000000?style=flat&logo=apple&logoColor=white&labelColor=0d1117&color=0d1117)](https://www.apple.com/macos/)
 
+### Activity Graph
+
+[![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=58a6ff&line=2ea043&point=58a6ff&area=true&hide_border=true&custom_title=Contribution%20Activity%20(Last%2012%20Months))](https://github.com/subkoks)
+
 ### Focus
 
 Coding agents · local automation · Solana trading and analytics tooling · hardware reverse-engineering · micro-soldering.
