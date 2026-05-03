@@ -4,6 +4,8 @@
 
 Local-first developer tools, coding agent infrastructure, and Solana automation.
 
+[![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=7aa2f7&line=00e5ff&point=7c3aed&area=true&area_color=00e5ff&title_color=a78bfa&hide_border=true&custom_title=Neural%20Contribution%20Stream%20(Last%2012%20Months))](https://github.com/subkoks)
+
 [![X](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://x.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
 [![Followers](https://img.shields.io/github/followers/subkoks?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=238636&label=followers)](https://github.com/subkoks?tab=followers)
@@ -27,10 +29,6 @@ Local-first developer tools, coding agent infrastructure, and Solana automation.
 [![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat&logo=gnubash&logoColor=white&labelColor=0d1117&color=0d1117)](https://www.gnu.org/software/bash/)
 [![Solana](https://img.shields.io/badge/-Solana-9945FF?style=flat&logo=solana&logoColor=white&labelColor=0d1117&color=0d1117)](https://solana.com/)
 [![macOS](https://img.shields.io/badge/-macOS-000000?style=flat&logo=apple&logoColor=white&labelColor=0d1117&color=0d1117)](https://www.apple.com/macos/)
-
-### Activity Graph
-
-[![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=58a6ff&line=2ea043&point=58a6ff&area=true&hide_border=true&custom_title=Contribution%20Activity%20(Last%2012%20Months))](https://github.com/subkoks)
 
 ### Focus
 
