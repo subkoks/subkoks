@@ -18,8 +18,8 @@ AI developer tools building, coding agent infrastructure, and Crypto & Solana au
 
 - [**BSELA**](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI) — local control plane that learns from coding-AI sessions: captures, detects errors, distills lessons, proposes `AGENTS.md` updates.
 - [**agents-md**](https://github.com/subkoks/agents-md) — canonical, cross-editor agent rule system on the GOTCHA framework, with a Solana / web3 skill pack.
-- [**stake-mirrors-ping**](https://github.com/subkoks/stake-mirrors-ping) — latency benchmark downloader for Stake.com mirrors and lowest-latency NordVPN regions.
 - [**apple-all-schematic**](https://github.com/subkoks/apple-all-schematic) — Apple schematic downloader and boardview downloader for microsoldering repair workflows.
+- [**MASTER PLAN: Quit Your Job With Solana**] — > Started 27 subprojects ranked by gap score, revenue ceiling, and buildability.
 
 ### Stack
 
