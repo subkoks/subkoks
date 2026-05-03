@@ -2,7 +2,8 @@
 
 # Blackterminal
 
-Local-first developer tools, coding agent infrastructure, and Solana automation.
+Building AI coding agent infrastructure, developer tools, and Solana automation.  
+Focused on Web3, crypto systems, and day trading automation.
 
 [![blackterminal activity graph](https://github-readme-activity-graph.vercel.app/graph?username=subkoks&bg_color=0d1117&color=7aa2f7&line=00e5ff&point=7c3aed&area=true&area_color=00e5ff&title_color=a78bfa&hide_border=true&custom_title=Neural%20Contribution%20Stream%20(Last%2012%20Months))](https://github.com/subkoks)
 
@@ -18,8 +19,8 @@ Local-first developer tools, coding agent infrastructure, and Solana automation.
 
 - [**BSELA**](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI) — local control plane that learns from coding-AI sessions: captures, detects errors, distills lessons, proposes `AGENTS.md` updates.
 - [**agents-md**](https://github.com/subkoks/agents-md) — canonical, cross-editor agent rule system on the GOTCHA framework, with a Solana / web3 skill pack.
-- [**stake-mirrors-ping**](https://github.com/subkoks/stake-mirrors-ping) — latency benchmark downloader for Stake.com mirrors and lowest-latency NordVPN regions.
 - [**apple-all-schematic**](https://github.com/subkoks/apple-all-schematic) — Apple schematic downloader and boardview downloader for microsoldering repair workflows.
+- [**MASTER PLAN: Quit Your Job With Solana**] — > Started 27 subprojects ranked by gap score, revenue ceiling, and buildability.
 
 ### Stack
 
