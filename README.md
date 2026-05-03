@@ -2,7 +2,7 @@
 
 # Blackterminal
 
-Local-first dev tooling, agent infrastructure, and Solana automation.
+Local-first developer tools, coding agent infrastructure, and Solana automation.
 
 [![X](https://img.shields.io/badge/-@Subkoks-1da1f2?style=flat&logo=x&logoColor=white&labelColor=0d1117&color=0d1117)](https://x.com/Subkoks)
 [![GitHub](https://img.shields.io/badge/-subkoks-238636?style=flat&logo=github&logoColor=white&labelColor=0d1117&color=0d1117)](https://github.com/subkoks)
@@ -16,8 +16,8 @@ Local-first dev tooling, agent infrastructure, and Solana automation.
 
 - [**BSELA**](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI) — local control plane that learns from coding-AI sessions: captures, detects errors, distills lessons, proposes `AGENTS.md` updates.
 - [**agents-md**](https://github.com/subkoks/agents-md) — canonical, cross-editor agent rule system on the GOTCHA framework, with a Solana / web3 skill pack.
-- [**stake-mirrors-ping**](https://github.com/subkoks/stake-mirrors-ping) — find the fastest Stake.com mirror and the lowest-latency NordVPN region, async.
-- [**apple-all-schematic**](https://github.com/subkoks/apple-all-schematic) — bulk download Apple device schematics and boardview files, clean originals.
+- [**stake-mirrors-ping**](https://github.com/subkoks/stake-mirrors-ping) — latency benchmark downloader for Stake.com mirrors and lowest-latency NordVPN regions.
+- [**apple-all-schematic**](https://github.com/subkoks/apple-all-schematic) — Apple schematic downloader and boardview downloader for microsoldering repair workflows.
 
 ### Stack
 
