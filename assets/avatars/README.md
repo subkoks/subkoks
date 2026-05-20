@@ -9,6 +9,9 @@ All 1024×1024 PNG, ready to upload to GitHub. Two finalist directions (A = sigi
 | `avatar-option-a-sigil.png` | `>/` brush-stroke sigil + green dot | Original. Reads as both a slash and a chevron. |
 | `avatar-option-a2-prompt.png` | Chunky `>_` prompt + green dot | Most literal "Blackterminal" mark. Bold at any size. |
 | `avatar-option-a3-slash.png` | Single diagonal slash + green dot | Maximum minimalism. Most expensive-looking. |
+| `avatar-option-a4-block.png` | Solid cursor block (vertical bar) + green dot | Most literal "blinking cursor" evocation. Reads massive at small size. |
+| `avatar-option-a5-stroke.png` | Zen horizontal brush stroke + green dot | Most artisanal / gallery-art aesthetic. |
+| `avatar-option-a6-wedge.png` | Asymmetric wedge / cursor arrow + green dot | Reads as a mouse cursor, play button, or paper plane. Most dynamic. |
 
 ## CRT face set (B — cyberpunk face)
 
@@ -18,11 +21,13 @@ All 1024×1024 PNG, ready to upload to GitHub. Two finalist directions (A = sigi
 | `avatar-option-b2-three-quarter.png` | Three-quarter angle, low-poly wireframe + green RGB split | Most sculptural / 3D-feeling. |
 | `avatar-option-b3-heavy-glitch.png` | Full RGB chromatic split (green + magenta), dense scanlines | Most aggressive cyberpunk. |
 
-## Original character variant
+## Noir portrait set (C — editorial character)
 
-| File | Direction | Notes |
-|------|-----------|-------|
-| `avatar-option-c-noir-portrait.png` | Editorial noir portrait + purple rim | Closest "redesigned anime" replacement. |
+| File | Variant | Notes |
+|------|---------|-------|
+| `avatar-option-c-noir-portrait.png` | Side-glance + purple rim light | Original. Most "moody". |
+| `avatar-option-c2-front-green.png` | Straight-on direct gaze + green rim light | On-brand green accent. Most "presence" / direct. |
+| `avatar-option-c3-silhouette.png` | Side-profile silhouette + purple contour light | Most dramatic / mysterious. Heavy negative space. |
 
 ## How to set on GitHub
 
