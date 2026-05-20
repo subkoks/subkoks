@@ -238,8 +238,24 @@ Pick one fallback URL and paste it as an HTML comment under the `## GitHub Activ
 
 ---
 
-## 12. Next action
+## 12. Status
 
-1. Read draft: [profile/README.md](profile/README.md).  
-2. Run Cursor with [PROMPT.md](PROMPT.md) when ready to apply to `subkoks/subkoks`.  
-3. Say when to publish — copy draft → live repo and push.
+| Phase | State | Note |
+|-------|-------|------|
+| 0 — Workspace | done | `GitHub-Profile` repo with plan, prompt, scripts |
+| 1 — Draft & preview | done | `deploy-check.sh` passes 22/22 |
+| 2 — Publish profile | done | [subkoks/subkoks PR #16](https://github.com/subkoks/subkoks/pull/16) squash-merged into main |
+| 3 — Align about-me | done | [subkoks/about-me PR #10](https://github.com/subkoks/about-me/pull/10) squash-merged into main |
+| 4 — GitHub settings | partial | Bio + blog updated via API; pins partial (see below) |
+| 5 — Optional polish | open | github-readme-stats card, custom Figma badges, blog RSS |
+
+### Remaining manual step
+
+**Pin `about-me` on the profile UI.** GitHub's GraphQL API does not expose a `setPinnedItems` mutation (verified: `Field 'setPinnedItems' doesn't exist on type 'Mutation'`), and there is no REST equivalent. Current pins from API: `BEST-Self-Enhancement-Learning-AI`, `agents-md`. Add `about-me` as the third pin via the profile UI on https://github.com/subkoks (click **Customize your pins**).
+
+### Auto-mode decisions
+
+- `[DECISION]` Main branch is protected with required PR → used feature branch + PR + squash-merge (`required_approving_review_count: 0`, doc-only change on user's own repo).
+- `[DECISION]` Kept `location: Solana` (plan flagged as optional meme; no signal to change).
+- `[DECISION]` Cleared `blog` field — was circularly pointing at `github.com/subkoks`.
+- `[DECISION]` Cursor Bugbot check was pending and not a required status check; merged without waiting.
