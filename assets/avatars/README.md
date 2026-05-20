@@ -1,12 +1,28 @@
-# Profile avatar — option set 1
+# Profile avatar — options
 
-Three distinct directions, all 1024×1024 PNG, ready to upload to GitHub.
+All 1024×1024 PNG, ready to upload to GitHub. Two finalist directions (A = sigil, B = CRT face) plus the original noir character.
 
-| File | Direction | Palette | Notes |
-|------|-----------|---------|-------|
-| `avatar-option-a-sigil.png` | Abstract personal sigil — `>/` mark + green dot accent | Mono white on black with one #238636 dot | Most minimal / professional. Reads small. Trend: brutalist sigils. |
-| `avatar-option-b-crt-face.png` | CRT-glitch geometric face with green chromatic-aberration | Mono white outlines + #238636 channel offset | Cyberpunk vibe, recognisable as a face at thumbnail size. |
-| `avatar-option-c-noir-portrait.png` | Editorial noir character portrait with purple rim light | Greyscale + Solana purple #9945FF accent | Most expressive, character-driven. Closest to "redesigned anime" replacement. |
+## Sigil set (A — brutalist mark)
+
+| File | Mark | Notes |
+|------|------|-------|
+| `avatar-option-a-sigil.png` | `>/` brush-stroke sigil + green dot | Original. Reads as both a slash and a chevron. |
+| `avatar-option-a2-prompt.png` | Chunky `>_` prompt + green dot | Most literal "Blackterminal" mark. Bold at any size. |
+| `avatar-option-a3-slash.png` | Single diagonal slash + green dot | Maximum minimalism. Most expensive-looking. |
+
+## CRT face set (B — cyberpunk face)
+
+| File | Variant | Notes |
+|------|---------|-------|
+| `avatar-option-b-crt-face.png` | Straight-on, light scanlines, subtle green aberration | Original. Calm cyberpunk. |
+| `avatar-option-b2-three-quarter.png` | Three-quarter angle, low-poly wireframe + green RGB split | Most sculptural / 3D-feeling. |
+| `avatar-option-b3-heavy-glitch.png` | Full RGB chromatic split (green + magenta), dense scanlines | Most aggressive cyberpunk. |
+
+## Original character variant
+
+| File | Direction | Notes |
+|------|-----------|-------|
+| `avatar-option-c-noir-portrait.png` | Editorial noir portrait + purple rim | Closest "redesigned anime" replacement. |
 
 ## How to set on GitHub
 
