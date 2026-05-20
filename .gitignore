@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+.env
+*.local
+.idea/
+*.swp
+*.swo
+node_modules/
+dist/
+.cache/
