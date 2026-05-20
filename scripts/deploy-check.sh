@@ -11,25 +11,58 @@ if [[ ! -f "${README}" ]]; then
   exit 1
 fi
 
+MIN_IMAGE_BYTES=200
+
 echo "Checking: ${README}"
 FAIL=0
+WARN=0
 
 while IFS= read -r url; do
-  code="$(curl -sL -o /dev/null -w "%{http_code}" --max-time 15 "${url}" || echo "000")"
-  if [[ "${code}" =~ ^(200|301|302)$ ]]; then
-    echo "  OK ${code} ${url}"
-  else
-    echo "  FAIL ${code} ${url}" >&2
+  read -r code ct size < <(
+    curl -sL -o /dev/null \
+      --max-time 15 \
+      -w '%{http_code} %{content_type} %{size_download}\n' \
+      "${url}" || echo "000 - 0"
+  )
+
+  status="OK"
+  detail=""
+  if [[ ! "${code}" =~ ^(200|301|302)$ ]]; then
+    status="FAIL"
     FAIL=1
+    detail="bad HTTP"
+  elif [[ "${url}" =~ shields\.io|ghchart|komarev|streak-stats|github-readme ]]; then
+    if [[ ! "${ct}" =~ image|svg ]]; then
+      status="WARN"
+      WARN=1
+      detail="non-image content-type: ${ct}"
+    elif (( size < MIN_IMAGE_BYTES )); then
+      status="WARN"
+      WARN=1
+      detail="tiny image (${size}B) — likely broken slug or empty render"
+    fi
   fi
-done < <(grep -oE 'https?://[^)]+' "${README}" | sed 's/)$//' | sort -u)
+
+  printf '  %-4s %s %s %s\n' "${status}" "${code}" "${url}" "${detail:+— ${detail}}"
+done < <(grep -oE 'https?://[^)" ]+' "${README}" | sed 's/[),]$//' | sort -u)
 
 if grep -q 'github-readme-activity-graph' "${README}"; then
-  echo "  WARN: profile still references github-readme-activity-graph (line chart)" >&2
+  echo "  WARN profile still references github-readme-activity-graph (old line chart)" >&2
+  WARN=1
 fi
 
-if grep -q 'MASTER PLAN' "${README}"; then
-  echo "  WARN: MASTER PLAN mention without repo link" >&2
+if grep -qiE 'master plan' "${README}"; then
+  echo "  WARN MASTER PLAN mention without resolved link" >&2
+  WARN=1
 fi
 
-exit "${FAIL}"
+echo ""
+if (( FAIL > 0 )); then
+  echo "Result: FAIL (one or more URLs broken)" >&2
+  exit 1
+fi
+if (( WARN > 0 )); then
+  echo "Result: OK with warnings"
+  exit 0
+fi
+echo "Result: OK"

@@ -58,18 +58,18 @@ Order optimized for “graph on top” without losing identity:
 │ ## GitHub Activity                      │
 │ [ghchart heatmap — green #238636]       │  ← TOP visual (replaces line chart)
 ├─────────────────────────────────────────┤
-│ ## Start here                           │  ← 3–4 real repos only
-├─────────────────────────────────────────┤
-│ ## Currently building                   │  ← same repos, 1-line each
+│ ## Currently building                   │  ← merged: 3–4 repos w/ emoji+blurb
 ├─────────────────────────────────────────┤
 │ ## Stack & tools                        │  ← grouped flat-square badges
 ├─────────────────────────────────────────┤
-│ ## Focus                                │  ← short keyword line (keep yours)
+│ ## Now                                  │  ← 3 dated bullets (replaces Focus)
 ├─────────────────────────────────────────┤
 │ ## Connect                              │  ← X, GitHub, optional site
 │ [profile views counter]                 │
 └─────────────────────────────────────────┘
 ```
+
+**Why merged "Start here" + "Currently building":** with 4 public repos both lists held the same items. Single section keeps it honest. `## Now` replaces a redundant `## Focus` (tagline already covers focus).
 
 **Do not add** fake star counts, blog automation, or 20 project sections until repos exist.
 
@@ -167,9 +167,25 @@ Avoid `for-the-badge` on the main strip unless you want a louder, “marketing�
 
 ### Phase 4 — GitHub settings (manual)
 
-- [ ] Profile picture / banner (optional)  
-- [ ] Pinned repos: `agents-md`, `BEST-Self-Enhancement-Learning-AI`, `agents-md` or `about-me` (max 6)  
-- [ ] Bio, location, X handle consistency (`@Subkoks`)
+**Settings → Public profile:**
+
+| Field | Value |
+|-------|-------|
+| Name | `Blackterminal` |
+| Bio (≤160 chars) | `Building AI coding agent infrastructure, dev tools, and Solana automation. Deep in vibe-coding mode.` |
+| Location | `Solana` (current meme — keep) **or** `Remote / EU` if you prefer neutral |
+| Pronouns | (skip) |
+| Website | leave blank until `black.terminal` lives; do **not** point at github.com/subkoks (circular) |
+| Social accounts | X: `https://x.com/Subkoks` |
+| Profile picture | optional — keep current or upload a 1:1 dark logo |
+
+**Pinned repositories (max 6, in this order):**
+
+1. `BEST-Self-Enhancement-Learning-AI` — BSELA flagship  
+2. `agents-md` — flagship, highest growth potential  
+3. `about-me` — secondary identity page  
+
+Skip `subkoks/subkoks` (README host, already shown above pins).
 
 ### Phase 5 — Optional polish (later)
 
@@ -207,10 +223,18 @@ Avoid `for-the-badge` on the main strip unless you want a louder, “marketing�
 
 | Risk | Mitigation |
 |------|------------|
-| ghchart third-party down | Fallback link to github.com/subkoks; document alt URL in PLAN |
-| External images blocked | All HTTPS; avoid mixed content |
+| ghchart.rshah.org single-maintainer, low activity | Document fallbacks; consider self-hosting (see below) |
+| External images blocked / Shields slug invalid | Use `deploy-check.sh` Content-Type check; verify in incognito |
 | Too empty vs steipete | Quality over quantity; strong copy on 3–4 projects |
 | Widget overload | Max 2 dynamic widgets on profile (heatmap + view counter) |
+
+**Activity-graph fallbacks** (if `ghchart.rshah.org` breaks):
+
+1. **github-readme-streak-stats** — `https://streak-stats.demolab.com/?user=subkoks&theme=dark&hide_border=true` (different look, but live and maintained).
+2. **Self-host ghchart** — fork [`2016rshah/githubchart-api`](https://github.com/2016rshah/githubchart-api) on Vercel, point image at your URL.
+3. **github-readme-activity-graph** — keep your old line chart available on `about-me` so the profile and the about-page don't both depend on the same widget.
+
+Pick one fallback URL and paste it as an HTML comment under the `## GitHub Activity` block so future-you can swap in 10 seconds.
 
 ---
 
