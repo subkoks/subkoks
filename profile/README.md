@@ -51,15 +51,10 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 
 ![Cursor](https://img.shields.io/badge/-Cursor-000000?style=flat-square&logo=cursor&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Codex](https://img.shields.io/badge/-Codex-412991?style=flat-square&logo=openai&logoColor=white)
+![Windsurf](https://img.shields.io/badge/-Windsurf-09B6A2?style=flat-square&logo=windsurf&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Zsh](https://img.shields.io/badge/-Zsh-1A1A1A?style=flat-square&logo=zsh&logoColor=white)
-
-## Now
-
-- 🍎 Designing a native visual interface for `apple-all-schematic`.
-- 🔬 Shipping `agents-md` v0.3 — Solana skill pack and cross-editor MCP wiring.
-- 🧪 Building BSELA alpha — session capture works; lesson distillation next.
-- 🟣 Exploring Solana memecoin and launch trading tooling.
 
 ## Connect
 
