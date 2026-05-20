@@ -23,8 +23,11 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 
 ## Currently building
 
+- 🍎 **apple-all-schematic** _(private)_ — Bulk Apple-device schematic and boardview downloader from free Telegram channels: clean originals, no watermarks. Building a native visual interface next.
 - 🧠 **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent rules on the GOTCHA framework with a Solana / web3 skill pack and `make install-*` flows for Cursor, Claude Code, Codex, and Windsurf.
 - 🛠️ **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions: captures context, detects failures, distills lessons, and proposes `AGENTS.md` updates.
+- 🛡️ **hacker-agent** _(private)_ — Permanent-memory security research toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP bridge, Cursor agents (Python 3.13 + `uv`).
+- 📡 **stake-mirrors-ping** _(private)_ — Finds the fastest Stake.com mirror and the optimal NordVPN region for lowest latency.
 - 📄 **[about-me](https://github.com/subkoks/about-me)** — Extended about page with stack and links (profile README stays in this repo).
 - 🟢 **Solana experiments** — Trading, scanners, and on-chain automation; repos appear here as they go public.
 
@@ -53,6 +56,7 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 
 ## Now
 
+- 🍎 Designing a native visual interface for `apple-all-schematic`.
 - 🔬 Shipping `agents-md` v0.3 — Solana skill pack and cross-editor MCP wiring.
 - 🧪 Building BSELA alpha — session capture works; lesson distillation next.
 - 🟣 Exploring Solana memecoin and launch trading tooling.
