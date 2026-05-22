@@ -1,6 +1,6 @@
 # Profile avatar — options
 
-All 1024×1024 PNG, ready to upload to GitHub. Two finalist directions (A = sigil, B = CRT face) plus the original noir character.
+All 1024×1024 PNG, ready to upload to GitHub. Four direction sets (A = sigil, B = CRT face, C = noir portrait, D = research-informed new directions).
 
 ## Sigil set (A — brutalist mark)
 
@@ -28,6 +28,17 @@ All 1024×1024 PNG, ready to upload to GitHub. Two finalist directions (A = sigi
 | `avatar-option-c-noir-portrait.png` | Side-glance + purple rim light | Original. Most "moody". |
 | `avatar-option-c2-front-green.png` | Straight-on direct gaze + green rim light | On-brand green accent. Most "presence" / direct. |
 | `avatar-option-c3-silhouette.png` | Side-profile silhouette + purple contour light | Most dramatic / mysterious. Heavy negative space. |
+
+## D — new directions (informed by what top devs actually use)
+
+Sampled 18 top dev profiles (karpathy, antfu, shadcn, yetone, sindresorhus, t3dotgg, simonw, ggerganov, midudev, mxstbr, defunkt, adamwathan, pi0, danielroe, armaniferrante, okjodom, rasbt, steipete). Dominant pattern: **branded photo (~65%)** or **stylized portrait (~25%)**. Pure abstract sigils are essentially absent on individual dev profiles.
+
+| File | Direction | Reference | Notes |
+|------|-----------|-----------|-------|
+| `avatar-option-d1-branded-photo.png` | Branded studio photo (green backdrop) | t3dotgg (purple), midudev (blue), sindresorhus | Generic stock-feeling face — not a real photo of you. Risky unless treated as a brand stand-in. |
+| `avatar-option-d2-hooded-terminal.png` | Minimalist hooded figure + green terminal slit eye | okjodom (cyberpunk) | **Most on-brand for "Blackterminal".** Editorial flat illustration, not anime. Literally embodies the name. |
+| `avatar-option-d3-mascot.png` | Original cat mascot, single CRT green eye | Octocat, Tux — mascot strategy | Memorable, ownable, scales to merch/site. Loses "senior dev" signal in exchange for brand recall. |
+| `avatar-option-d4-editorial-warm.png` | Editorial illustrated portrait, green backdrop | antfu, yetone, armaniferrante, shadcn | Pattern-matched safe bet. Painterly, not anime. Closest to proven popular formula. |
 
 ## How to set on GitHub
 
