@@ -1,8 +1,8 @@
 # GitHub profile redesign plan — subkoks → steipete-style
 
-**Target:** [github.com/subkoks](https://github.com/subkoks)  
-**Inspiration:** [github.com/steipete](https://github.com/steipete)  
-**Publish target:** [subkoks/subkoks](https://github.com/subkoks/subkoks) README  
+**Target:** [github.com/subkoks](https://github.com/subkoks)
+**Inspiration:** [github.com/steipete](https://github.com/steipete)
+**Publish target:** [subkoks/subkoks](https://github.com/subkoks/subkoks) README
 **Draft source:** [profile/README.md](profile/README.md)
 
 ---
@@ -18,7 +18,7 @@
 | Stack | Single flat row | No grouping (Languages / Platforms / Tools) |
 | Footer | X, GitHub, view counter | Fine; steipete adds more socials (you can stay minimal) |
 
-**Public repos (2026-05-20):** `subkoks`, `about-me`, `agents-md`, `BEST-Self-Enhancement-Learning-AI`.  
+**Public repos (2026-05-20):** `subkoks`, `about-me`, `agents-md`, `BEST-Self-Enhancement-Learning-AI`.
 `apple-all-schematic` is referenced locally but not in public API — pin only when public.
 
 ---
@@ -83,7 +83,7 @@ Order optimized for “graph on top” without losing identity:
 | B. github-readme-activity-graph | `...vercel.app/graph?username=subkoks&theme=github-dark&area=true` | Line/area, “last 12 months” | Keep only in `about-me` if you want both |
 | C. Both | ghchart on profile; line chart on about-me | Richer but redundant | Optional |
 
-**Action:** Remove line chart from main profile; use ghchart with your existing brand green `238636`.  
+**Action:** Remove line chart from main profile; use ghchart with your existing brand green `238636`.
 Sync [subkoks/about-me](https://github.com/subkoks/about-me) to the same heatmap OR document why about-me keeps the line chart.
 
 ---
@@ -94,16 +94,16 @@ Sync [subkoks/about-me](https://github.com/subkoks/about-me) to the same heatmap
 
 Include only what you actually use:
 
-- Python, TypeScript, JavaScript, Node.js  
-- Solana  
-- Bash/Zsh, CLI  
-- macOS, Linux  
-- Cursor / VS Code (optional), Git  
+- Python, TypeScript, JavaScript, Node.js
+- Solana
+- Bash/Zsh, CLI
+- macOS, Linux
+- Cursor / VS Code (optional), Git
 
 **Row 2 — Stack & tools** (below projects): same style, grouped headings:
 
-- **Languages & runtimes**  
-- **Platforms**  
+- **Languages & runtimes**
+- **Platforms**
 - **Tools** (Cursor, Claude, Git, etc.)
 
 Avoid `for-the-badge` on the main strip unless you want a louder, “marketing” look; steipete uses flat-square.
@@ -121,8 +121,8 @@ Avoid `for-the-badge` on the main strip unless you want a louder, “marketing�
 
 **Defer / fix:**
 
-- **MASTER PLAN: Quit Your Job With Solana** — no public repo; use plain text or create repo before linking.  
-- **apple-all-schematic** — add when public; until then omit or “private WIP”.  
+- **MASTER PLAN: Quit Your Job With Solana** — no public repo; use plain text or create repo before linking.
+- **apple-all-schematic** — add when public; until then omit or “private WIP”.
 - **hacker-agent**, **stake-dice-graph** — local Active workspace; add when pushed public.
 
 **GitHub profile bio** (Settings → Profile): align with README one-liner; set website when `black.terminal` is live.
@@ -144,25 +144,25 @@ Avoid `for-the-badge` on the main strip unless you want a louder, “marketing�
 
 ### Phase 0 — Workspace (done in this folder)
 
-- [x] `GitHub-Profile` repo with plan, prompt, draft README, scripts  
+- [x] `GitHub-Profile` repo with plan, prompt, draft README, scripts
 - [ ] Optional: `git remote add origin` → new `subkoks/GitHub-Profile` or keep local-only
 
 ### Phase 1 — Draft & preview (1 session)
 
-1. Review [profile/README.md](profile/README.md).  
-2. Run `./scripts/preview-urls.sh` and open URLs in browser.  
-3. Tweak ghchart color / badge list.  
+1. Review [profile/README.md](profile/README.md).
+2. Run `./scripts/preview-urls.sh` and open URLs in browser.
+3. Tweak ghchart color / badge list.
 4. Run `./scripts/deploy-check.sh`.
 
 ### Phase 2 — Publish profile (1 commit)
 
-1. Copy `profile/README.md` → `subkoks/subkoks/README.md` (or PR from this repo).  
-2. Push `main` on `subkoks/subkoks`.  
+1. Copy `profile/README.md` → `subkoks/subkoks/README.md` (or PR from this repo).
+2. Push `main` on `subkoks/subkoks`.
 3. Verify on [github.com/subkoks](https://github.com/subkoks) (cache may take ~1 min).
 
 ### Phase 3 — Align about-me
 
-1. Update `about-me` README: same ghchart embed + link back to profile.  
+1. Update `about-me` README: same ghchart embed + link back to profile.
 2. Remove duplicate/conflicting graph widgets.
 
 ### Phase 4 — GitHub settings (manual)
@@ -181,17 +181,17 @@ Avoid `for-the-badge` on the main strip unless you want a louder, “marketing�
 
 **Pinned repositories (max 6, in this order):**
 
-1. `BEST-Self-Enhancement-Learning-AI` — BSELA flagship  
-2. `agents-md` — flagship, highest growth potential  
-3. `about-me` — secondary identity page  
+1. `BEST-Self-Enhancement-Learning-AI` — BSELA flagship
+2. `agents-md` — flagship, highest growth potential
+3. `about-me` — secondary identity page
 
 Skip `subkoks/subkoks` (README host, already shown above pins).
 
 ### Phase 5 — Optional polish (later)
 
-- Custom PNG badges (Figma → R2/img.shields) for 1:1 steipete tile look  
-- `github-readme-stats` card (minimal: top langs only) — **below** heatmap, not above  
-- Blog post list via GitHub Action (only if you have RSS)  
+- Custom PNG badges (Figma → R2/img.shields) for 1:1 steipete tile look
+- `github-readme-stats` card (minimal: top langs only) — **below** heatmap, not above
+- Blog post list via GitHub Action (only if you have RSS)
 - `<details>` for media / recognition when you have links
 
 ---
@@ -211,10 +211,10 @@ Skip `subkoks/subkoks` (README host, already shown above pins).
 
 ## 10. Success criteria
 
-- [ ] First screen: identity + **heatmap** + colorful stack (no scroll for graph).  
-- [ ] No broken project links.  
-- [ ] Reads clean on mobile (badges wrap; graph scales).  
-- [ ] Dark mode: no white boxes around chart.  
+- [ ] First screen: identity + **heatmap** + colorful stack (no scroll for graph).
+- [ ] No broken project links.
+- [ ] Reads clean on mobile (badges wrap; graph scales).
+- [ ] Dark mode: no white boxes around chart.
 - [ ] `about-me` and profile don’t fight each other visually.
 
 ---
