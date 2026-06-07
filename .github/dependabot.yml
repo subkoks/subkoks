@@ -1,0 +1,21 @@
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# This is a profile/config repo (no app code), so the only ecosystem worth
+# tracking is github-actions — it keeps the SHA-pinned actions in
+# .github/workflows/claude.yml current. A previous github-actions config failed
+# with dependency_file_not_found because the repo had no workflows; claude.yml
+# now exists, so this resolves cleanly.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels: ["dependencies"]
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    groups:
+      actions:
+        applies-to: version-updates
+        update-types: ["minor", "patch"]
