@@ -45,7 +45,7 @@ jobs:
           fetch-depth: 1
 
       - name: Claude auto-review
-        uses: anthropics/claude-code-action@593d7a5c4e0073569f74772c2b7b64c30ec14707 # v1
+        uses: anthropics/claude-code-action@4d7e1f0cd85743fdc93b1c8040ab54395da024e2 # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Prompt sent automatically on every PR — no @claude mention needed
@@ -72,7 +72,7 @@ jobs:
           echo "Claude token shape OK (length ${#TOKEN})."
 
       - name: Claude auto-review
-        uses: anthropics/claude-code-action@593d7a5c4e0073569f74772c2b7b64c30ec14707 # v1
+        uses: anthropics/claude-code-action@4d7e1f0cd85743fdc93b1c8040ab54395da024e2 # v1
         with:
           claude_code_oauth_token: ${{ env.CLAUDE_OAUTH }}
           # Prompt sent automatically on every PR — no @claude mention needed
@@ -135,7 +135,7 @@ jobs:
 
       - name: Run Claude Code
         id: claude
-        uses: anthropics/claude-code-action@593d7a5c4e0073569f74772c2b7b64c30ec14707 # v1
+        uses: anthropics/claude-code-action@4d7e1f0cd85743fdc93b1c8040ab54395da024e2 # v1
         with:
           claude_code_oauth_token: ${{ env.CLAUDE_OAUTH }}
           claude_args: |
