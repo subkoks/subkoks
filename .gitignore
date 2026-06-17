@@ -8,3 +8,7 @@ Thumbs.db
 node_modules/
 dist/
 .cache/
+
+# Claude Code (commit shared settings; ignore machine-local perms + transcripts)
+.claude/*
+!.claude/settings.json
