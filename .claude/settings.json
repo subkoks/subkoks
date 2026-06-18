@@ -1,4 +1,12 @@
 {
-  "project": "subkoks",
-  "description": "GitHub profile README repository"
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          { "type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/scripts/cloud-setup.sh" }
+        ]
+      }
+    ]
+  }
 }
