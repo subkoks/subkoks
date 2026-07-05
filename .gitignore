@@ -2,6 +2,7 @@
 Thumbs.db
 .vscode/
 .idea/
+.cursor/
 
 # Claude Code (commit shared settings; ignore machine-local perms + transcripts)
 .claude/*
