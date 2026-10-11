@@ -33,8 +33,25 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
+      - name: Fetch published local counts
+        run: |
+          set -euo pipefail
+          # Local activity (Codex turns, local commits) is collected on the Mac
+          # and parked on this branch, so a weekly run keeps it instead of
+          # dropping back to GitHub-only data.
+          if git fetch -q --depth=1 origin activity 2>/dev/null &&
+             git show FETCH_HEAD:local-activity.json > "$RUNNER_TEMP/local-activity.json" 2>/dev/null; then
+            echo "using published local counts"
+          else
+            echo "no local counts published yet; rendering GitHub only"
+            rm -f "$RUNNER_TEMP/local-activity.json"
+          fi
       - name: Render heatmap
-        run: python3 scripts/contrib_heatmap.py --user "$GITHUB_REPOSITORY_OWNER" --out "$RUNNER_TEMP/activity.svg"
+        run: |
+          python3 scripts/contrib_heatmap.py \
+            --user "$GITHUB_REPOSITORY_OWNER" \
+            --local-json "$RUNNER_TEMP/local-activity.json" \
+            --out "$RUNNER_TEMP/activity.svg"
       - name: Publish to the activity branch
         run: |
           set -euo pipefail
@@ -46,5 +63,9 @@ jobs:
           git rm -rq --cached --ignore-unmatch .
           cp "$RUNNER_TEMP/activity.svg" activity.svg
           git add -- activity.svg
+          if [ -f "$RUNNER_TEMP/local-activity.json" ]; then
+            cp "$RUNNER_TEMP/local-activity.json" local-activity.json
+            git add -- local-activity.json
+          fi
           git commit -q -m "chore(activity): refresh contribution graph"
           git push -q --force origin activity

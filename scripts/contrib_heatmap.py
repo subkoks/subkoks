@@ -5,10 +5,15 @@ The profile README embeds the generated file, so the heatmap can use a palette
 GitHub does not offer (dark card, orange squares) and does not depend on a
 third-party chart service staying up.
 
-Data comes from GitHub's public contribution calendar HTML: no token and no
-API quota. Refresh manually with:
+Data comes from GitHub's public contribution calendar HTML: no token and no API
+quota. `--local-json` optionally merges local coding activity (Codex turns and
+local commits, including unpushed work) collected by
+`scripts/local_activity.py`. A day takes the brighter of the two levels, so the
+graph reads "GitHub or local work happened". Refresh manually with:
 
     python3 scripts/contrib_heatmap.py --user subkoks --out assets/activity.svg
+    python3 scripts/contrib_heatmap.py --user subkoks --out activity.svg \
+        --local-json local-activity.json
 
 `.github/workflows/activity-graph.yml` runs the same command weekly and
 publishes the result to the `activity` branch, which is what the README loads.
@@ -18,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import pathlib
 import re
 import sys
@@ -39,6 +45,9 @@ FONT = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-se
 
 # Level 0 (no contributions) through 4 (busiest), dark to bright.
 LEVELS = ("#241c18", "#5a2f0c", "#98490c", "#d2690b", "#ff9f43")
+
+# Local activity points (turns + commits) needed to reach each level above zero.
+LOCAL_STEPS = (4, 14, 39)
 
 MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
@@ -77,6 +86,27 @@ def parse_calendar(html: str) -> tuple[dict[dt.date, int], str | None]:
     return days, (total.group(1) if total else None)
 
 
+def local_level(points: int) -> int:
+    """Bucket local activity into the same 0-4 scale as GitHub's levels."""
+    if points <= 0:
+        return 0
+    for level, ceiling in enumerate(LOCAL_STEPS, start=1):
+        if points <= ceiling:
+            return level
+    return 4
+
+
+def load_local(path: pathlib.Path) -> tuple[dict[dt.date, int], dict[str, int]]:
+    """Read the collector's JSON into per-day points plus its totals."""
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    points: dict[dt.date, int] = {}
+    for day, counts in payload.get("days", {}).items():
+        total = sum(int(v) for v in counts.values())
+        if total:
+            points[dt.date.fromisoformat(day)] = total
+    return points, {k: int(v) for k, v in payload.get("totals", {}).items()}
+
+
 def render(
     days: dict[dt.date, int],
     total: str | None,
@@ -85,8 +115,15 @@ def render(
     bg: str = BG,
     levels: tuple[str, ...] = LEVELS,
     label: str = LABEL,
+    local_points: dict[dt.date, int] | None = None,
+    local_totals: dict[str, int] | None = None,
 ) -> str:
-    first, last = min(days), max(days)
+    # GitHub levels win by default; local activity can only brighten a day.
+    merged = dict(days)
+    for day, points in (local_points or {}).items():
+        merged[day] = max(merged.get(day, 0), local_level(points))
+
+    first, last = min(merged), max(merged)
     # Anchor the grid to the Sunday on or before the first day so columns are weeks.
     start = first - dt.timedelta(days=(first.weekday() + 1) % 7)
     columns = (last - start).days // 7 + 1
@@ -97,7 +134,13 @@ def render(
     legend_y = PAD_TOP + grid_height + LEGEND_TOP_GAP
     height = legend_y + CELL + 6
 
-    summary = f"{total} contributions in the last year" if total else f"@{user} contribution activity"
+    if local_totals:
+        summary = (
+            f"{total or 0} on GitHub · {local_totals.get('turns', 0)} turns ·"
+            f" {local_totals.get('commits', 0)} commits"
+        )
+    else:
+        summary = f"{total} contributions in the last year" if total else f"@{user} contribution activity"
     body: list[str] = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}"'
         f' viewBox="0 0 {width} {height}" role="img"'
@@ -118,7 +161,7 @@ def render(
                 f"{MONTHS[week_start.month - 1]}</text>"
             )
 
-    for day, level in sorted(days.items()):
+    for day, level in sorted(merged.items()):
         column = (day - start).days // 7
         row = (day.weekday() + 1) % 7
         x = PAD_LEFT + column * STEP
@@ -145,7 +188,7 @@ def render(
         )
         swatch_x += STEP
     body.append(f'<text x="{swatch_x + 4}" y="{legend_y + CELL - 2}" fill="{label}">More</text>')
-    if total:
+    if total or local_totals:
         body.append(
             f'<text x="{width - PAD_RIGHT}" y="{legend_y + CELL - 2}"'
             f' text-anchor="end" fill="{label}">{escape(summary)}</text>'
@@ -164,6 +207,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--colors",
         help="comma-separated level palette, dark to bright (default: orange ramp)",
+    )
+    parser.add_argument(
+        "--local-json",
+        help="merge local activity counts from scripts/local_activity.py",
     )
     args = parser.parse_args(argv)
 
@@ -184,12 +231,31 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     days, total = parse_calendar(html)
-    svg = render(days, total, user=args.user, bg=args.bg, levels=levels)
+
+    local_points: dict[dt.date, int] = {}
+    local_totals: dict[str, int] = {}
+    if args.local_json:
+        local_path = pathlib.Path(args.local_json)
+        if local_path.is_file():
+            local_points, local_totals = load_local(local_path)
+        else:
+            print(f"note: {local_path} not found, rendering GitHub only", file=sys.stderr)
+
+    svg = render(
+        days,
+        total,
+        user=args.user,
+        bg=args.bg,
+        levels=levels,
+        local_points=local_points,
+        local_totals=local_totals,
+    )
 
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(svg, encoding="utf-8")
-    print(f"{out}: {len(days)} days {min(days)}..{max(days)}, total={total}")
+    detail = f", local days={len(local_points)}" if local_points else ""
+    print(f"{out}: {len(days)} days {min(days)}..{max(days)}, total={total}{detail}")
     return 0
 
 
