@@ -1,0 +1,48 @@
+name: activity graph
+
+# Regenerates the contribution heatmap from GitHub's public contribution
+# calendar (no secrets, no third-party chart service) and publishes it to the
+# `activity` branch, which is what the profile README embeds.
+#
+# `main` requires a pull request plus the `sanity` check, so the generated asset
+# is published to its own unprotected branch instead of being committed here.
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - scripts/contrib_heatmap.py
+      - .github/workflows/activity-graph.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity-graph
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Render heatmap
+        run: python3 scripts/contrib_heatmap.py --user "$GITHUB_REPOSITORY_OWNER" --out "$RUNNER_TEMP/activity.svg"
+      - name: Publish to the activity branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan activity
+          git rm -rq --cached .
+          cp "$RUNNER_TEMP/activity.svg" activity.svg
+          git add -- activity.svg
+          git commit -q -m "chore(activity): refresh contribution graph"
+          git push -q --force origin activity
