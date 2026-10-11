@@ -21,7 +21,7 @@
 
 <img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
-<!-- Rendered by scripts/contrib_heatmap.py, refreshed weekly from the activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
+<!-- GitHub contributions merged with local Codex turns and commits (counts only), rendered by scripts/contrib_heatmap.py. Refreshed hourly from the Mac that runs this repo, and weekly by .github/workflows/activity-graph.yml. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
 <h2><img alt="Currently building" src="assets/labels/currently-building.svg"></h2>
 
