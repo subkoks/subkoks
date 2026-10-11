@@ -1,30 +1,29 @@
 # Blackterminal
 
-Building AI coding agent infrastructure, developer tools, and Solana automation.
-Web3, local automation, practical scripts — deep in vibe-coding mode.
+<img alt="Building AI coding agent infrastructure, developer tools, and Solana automation. Web3, local automation, practical scripts — deep in vibe-coding mode." src="assets/tagline.svg">
 
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![ChatGPT](https://img.shields.io/badge/-ChatGPT-00A67E?style=flat-square&logo=openai&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Solana](https://img.shields.io/badge/-Solana-9945FF?style=flat-square&logo=solana&logoColor=white)
-![Codex](https://img.shields.io/badge/-Codex-412991?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMi4yODIgOS44MjFhNS45ODUgNS45ODUgMCAwIDAtLjUxNi00LjkxIDYuMDQ2IDYuMDQ2IDAgMCAwLTYuNTEtMi45QTYuMDY1IDYuMDY1IDAgMCAwIDQuOTgxIDQuMThhNS45ODUgNS45ODUgMCAwIDAtMy45OTggMi45IDYuMDQ2IDYuMDQ2IDAgMCAwIC43NDMgNy4wOTcgNS45OCA1Ljk4IDAgMCAwIC41MSA0LjkxMSA2LjA1MSA2LjA1MSAwIDAgMCA2LjUxNSAyLjlBNS45ODUgNS45ODUgMCAwIDAgMTMuMjYgMjRhNi4wNTYgNi4wNTYgMCAwIDAgNS43NzItNC4yMDYgNS45OSA1Ljk5IDAgMCAwIDMuOTk3LTIuOSA2LjA1NiA2LjA1NiAwIDAgMC0uNzQ3LTcuMDczek0xMy4yNiAyMi40M2E0LjQ3NiA0LjQ3NiAwIDAgMS0yLjg3Ni0xLjA0bC4xNDEtLjA4MSA0Ljc3OS0yLjc1OGEuNzk1Ljc5NSAwIDAgMCAuMzkyLS42ODF2LTYuNzM3bDIuMDIgMS4xNjhhLjA3MS4wNzEgMCAwIDEgLjAzOC4wNTJ2NS41ODNhNC41MDQgNC41MDQgMCAwIDEtNC40OTQgNC40OTR6TTMuNiAxOC4zMDRhNC40NyA0LjQ3IDAgMCAxLS41MzUtMy4wMTRsLjE0Mi4wODUgNC43ODMgMi43NTlhLjc3MS43NzEgMCAwIDAgLjc4IDBsNS44NDMtMy4zNjl2Mi4zMzJhLjA4LjA4IDAgMCAxLS4wMzMuMDYyTDkuNzQgMTkuOTVhNC41IDQuNSAwIDAgMS02LjE0LTEuNjQ2ek0yLjM0IDcuODk2YTQuNDg1IDQuNDg1IDAgMCAxIDIuMzY2LTEuOTczVjExLjZhLjc2Ni43NjYgMCAwIDAgLjM4OC42NzZsNS44MTUgMy4zNTUtMi4wMiAxLjE2OGEuMDc2LjA3NiAwIDAgMS0uMDcxIDBsLTQuODMtMi43ODZBNC41MDQgNC41MDQgMCAwIDEgMi4zNCA3Ljg3MnptMTYuNTk3IDMuODU1bC01LjgzMy0zLjM4N0wxNS4xMTkgNy4yYS4wNzYuMDc2IDAgMCAxIC4wNzEgMGw0LjgzIDIuNzkxYTQuNDk0IDQuNDk0IDAgMCAxLS42NzYgOC4xMDV2LTUuNjc4YS43OS43OSAwIDAgMC0uNDA3LS42Njd6bTIuMDEtMy4wMjNsLS4xNDEtLjA4NS00Ljc3NC0yLjc4MmEuNzc2Ljc3NiAwIDAgMC0uNzg1IDBMOS40MDkgOS4yM1Y2Ljg5N2EuMDY2LjA2NiAwIDAgMSAuMDI4LS4wNjFsNC44My0yLjc4N2E0LjUgNC41IDAgMCAxIDYuNjggNC42NnptLTEyLjY0IDQuMTM1bC0yLjAyLTEuMTY0YS4wOC4wOCAwIDAgMS0uMDM4LS4wNTdWNi4wNzVhNC41IDQuNSAwIDAgMSA3LjM3NS0zLjQ1M2wtLjE0Mi4wOEw4LjcwNCA1LjQ2YS43OTUuNzk1IDAgMCAwLS4zOTMuNjgxem0xLjA5Ny0yLjM2NWwyLjYwMi0xLjUgMi42MDcgMS41djIuOTk5bC0yLjU5NyAxLjUtMi42MDctMS41eiIvPjwvc3ZnPg==)
-![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![CLI](https://img.shields.io/badge/-CLI-1A1A1A?style=flat-square&logo=gnometerminal&logoColor=white)
-![Zsh](https://img.shields.io/badge/-Zsh-1A1A1A?style=flat-square&logo=zsh&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-1F1F1F?style=flat-square&logo=git&logoColor=FF7F0E)
+![JavaScript](https://img.shields.io/badge/-JavaScript-1F1F1F?style=flat-square&logo=javascript&logoColor=FF7F0E)
+![Linux](https://img.shields.io/badge/-Linux-1F1F1F?style=flat-square&logo=linux&logoColor=FF7F0E)
+![Bash](https://img.shields.io/badge/-Bash-1F1F1F?style=flat-square&logo=gnubash&logoColor=FF7F0E)
+![Node.js](https://img.shields.io/badge/-Node.js-1F1F1F?style=flat-square&logo=node.js&logoColor=FF7F0E)
+![ChatGPT](https://img.shields.io/badge/-ChatGPT-1F1F1F?style=flat-square&logo=openai&logoColor=FF7F0E)
+![TypeScript](https://img.shields.io/badge/-TypeScript-1F1F1F?style=flat-square&logo=typescript&logoColor=FF7F0E)
+![Python](https://img.shields.io/badge/-Python-1F1F1F?style=flat-square&logo=python&logoColor=FF7F0E)
+![VS Code](https://img.shields.io/badge/-VS%20Code-1F1F1F?style=flat-square&logo=visualstudiocode&logoColor=FF7F0E)
+![Solana](https://img.shields.io/badge/-Solana-1F1F1F?style=flat-square&logo=solana&logoColor=FF7F0E)
+![Codex](https://img.shields.io/badge/-Codex-1F1F1F?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGN0YwRSI+PHBhdGggZD0iTTIyLjI4MiA5LjgyMWE1Ljk4NSA1Ljk4NSAwIDAgMC0uNTE2LTQuOTEgNi4wNDYgNi4wNDYgMCAwIDAtNi41MS0yLjlBNi4wNjUgNi4wNjUgMCAwIDAgNC45ODEgNC4xOGE1Ljk4NSA1Ljk4NSAwIDAgMC0zLjk5OCAyLjkgNi4wNDYgNi4wNDYgMCAwIDAgLjc0MyA3LjA5NyA1Ljk4IDUuOTggMCAwIDAgLjUxIDQuOTExIDYuMDUxIDYuMDUxIDAgMCAwIDYuNTE1IDIuOUE1Ljk4NSA1Ljk4NSAwIDAgMCAxMy4yNiAyNGE2LjA1NiA2LjA1NiAwIDAgMCA1Ljc3Mi00LjIwNiA1Ljk5IDUuOTkgMCAwIDAgMy45OTctMi45IDYuMDU2IDYuMDU2IDAgMCAwLS43NDctNy4wNzN6TTEzLjI2IDIyLjQzYTQuNDc2IDQuNDc2IDAgMCAxLTIuODc2LTEuMDRsLjE0MS0uMDgxIDQuNzc5LTIuNzU4YS43OTUuNzk1IDAgMCAwIC4zOTItLjY4MXYtNi43MzdsMi4wMiAxLjE2OGEuMDcxLjA3MSAwIDAgMSAuMDM4LjA1MnY1LjU4M2E0LjUwNCA0LjUwNCAwIDAgMS00LjQ5NCA0LjQ5NHpNMy42IDE4LjMwNGE0LjQ3IDQuNDcgMCAwIDEtLjUzNS0zLjAxNGwuMTQyLjA4NSA0Ljc4MyAyLjc1OWEuNzcxLjc3MSAwIDAgMCAuNzggMGw1Ljg0My0zLjM2OXYyLjMzMmEuMDguMDggMCAwIDEtLjAzMy4wNjJMOS43NCAxOS45NWE0LjUgNC41IDAgMCAxLTYuMTQtMS42NDZ6TTIuMzQgNy44OTZhNC40ODUgNC40ODUgMCAwIDEgMi4zNjYtMS45NzNWMTEuNmEuNzY2Ljc2NiAwIDAgMCAuMzg4LjY3Nmw1LjgxNSAzLjM1NS0yLjAyIDEuMTY4YS4wNzYuMDc2IDAgMCAxLS4wNzEgMGwtNC44My0yLjc4NkE0LjUwNCA0LjUwNCAwIDAgMSAyLjM0IDcuODcyem0xNi41OTcgMy44NTVsLTUuODMzLTMuMzg3TDE1LjExOSA3LjJhLjA3Ni4wNzYgMCAwIDEgLjA3MSAwbDQuODMgMi43OTFhNC40OTQgNC40OTQgMCAwIDEtLjY3NiA4LjEwNXYtNS42NzhhLjc5Ljc5IDAgMCAwLS40MDctLjY2N3ptMi4wMS0zLjAyM2wtLjE0MS0uMDg1LTQuNzc0LTIuNzgyYS43NzYuNzc2IDAgMCAwLS43ODUgMEw5LjQwOSA5LjIzVjYuODk3YS4wNjYuMDY2IDAgMCAxIC4wMjgtLjA2MWw0LjgzLTIuNzg3YTQuNSA0LjUgMCAwIDEgNi42OCA0LjY2em0tMTIuNjQgNC4xMzVsLTIuMDItMS4xNjRhLjA4LjA4IDAgMCAxLS4wMzgtLjA1N1Y2LjA3NWE0LjUgNC41IDAgMCAxIDcuMzc1LTMuNDUzbC0uMTQyLjA4TDguNzA0IDUuNDZhLjc5NS43OTUgMCAwIDAtLjM5My42ODF6bTEuMDk3LTIuMzY1bDIuNjAyLTEuNSAyLjYwNyAxLjV2Mi45OTlsLTIuNTk3IDEuNS0yLjYwNy0xLjV6Ii8+PC9zdmc+)
+![macOS](https://img.shields.io/badge/-macOS-1F1F1F?style=flat-square&logo=apple&logoColor=FF7F0E)
+![CLI](https://img.shields.io/badge/-CLI-1F1F1F?style=flat-square&logo=gnometerminal&logoColor=FF7F0E)
+![Zsh](https://img.shields.io/badge/-Zsh-1F1F1F?style=flat-square&logo=zsh&logoColor=FF7F0E)
 
-## GitHub Activity
+<h2><img alt="GitHub Activity" src="assets/labels/github-activity.svg"></h2>
 
 <img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
 <!-- Rendered by scripts/contrib_heatmap.py, refreshed weekly from the activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
-## Currently building
+<h2><img alt="Currently building" src="assets/labels/currently-building.svg"></h2>
 
 - 🧠 **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent operating system on the GOTCHA framework: a Solana / web3 skill pack, runtime automation, and `make install-*` flows for Cursor, Claude Code, Codex, and Windsurf.
 - 🛠️ **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions: captures context, detects failures, distills lessons, and proposes `AGENTS.md` updates. Ships an MCP server + auditor.
@@ -32,7 +31,7 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 - 🛡️ **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP bridge, Cursor agents (Python 3.13 + `uv`).
 - 🟢 **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** — Solana market research, architecture, and a master plan, with trading bots and scanners taking shape in **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)**.
 
-## Projects
+<h2><img alt="Projects" src="assets/labels/projects.svg"></h2>
 
 ### 🤖 AI coding agents &amp; infrastructure
 
@@ -56,10 +55,10 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 - **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** · `Python` — Finds the fastest Stake.com mirror and the optimal NordVPN region for lowest latency. 🏓
 - **[about-me](https://github.com/subkoks/about-me)** · Extended about page — projects, stack, and links.
 
-## Connect
+<h2><img alt="Connect" src="assets/labels/connect.svg"></h2>
 
-[![X](https://img.shields.io/badge/-@Subkoks-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/Subkoks)
-[![GitHub](https://img.shields.io/badge/-subkoks-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/subkoks)
+[![X](https://img.shields.io/badge/-@Subkoks-1F1F1F?style=flat-square&logo=x&logoColor=FF7F0E)](https://x.com/Subkoks)
+[![GitHub](https://img.shields.io/badge/-subkoks-1F1F1F?style=flat-square&logo=github&logoColor=FF7F0E)](https://github.com/subkoks)
 <!-- Add blog / site badge here when black.terminal is live -->
 
-![Profile views](https://komarev.com/ghpvc/?username=subkoks&color=FF7F0E&style=flat-square&label=views)
+![Profile views](https://komarev.com/ghpvc/?username=subkoks&color=FF7F0E&labelColor=1F1F1F&style=flat-square&label=views)
