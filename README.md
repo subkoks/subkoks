@@ -26,39 +26,40 @@
 
 <h2><img alt="Currently building" src="assets/labels/currently-building.svg"></h2>
 
-- 🧠 **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent operating system on the GOTCHA framework: a Solana / web3 skill pack, drift-checked rule builds, runtime automation, and `make install-*` flows.
-- 🛠️ **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions: captures context, detects failures, distills lessons, and proposes `AGENTS.md` updates. Six-tool MCP server, drift alarms, rollback.
-- 🍎 **[BoardVault](https://github.com/subkoks/apple-all-schematic)** — macOS desktop app and CLI that downloads and organizes Apple-device schematics and boardviews from public Telegram channels. Native SwiftUI interface now shipping beside the Qt build.
-- 📡 **[BiQuadMonitor](https://github.com/subkoks/BiQuadMonitor)** — Native macOS menu-bar monitor for supported Cudy cellular routers: live SINR / RSRQ / RSRP / RSSI, antenna trial logging, saved measurement history. Unsigned Universal release.
-- 🛡️ **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research and reverse-engineering toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP catalog, Stake Engine math helpers (Python 3.13 + `uv`).
-- 🟢 **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** — Solana market research, architecture, and a master plan, with trading bots and scanners taking shape in **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)**.
+- **[agents-md](https://github.com/subkoks/agents-md)** — Cross-editor agent operating system on the GOTCHA framework: a Solana / web3 skill pack, drift-checked rule builds, runtime automation, and `make install-*` flows.
+- **[BSELA](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** — Local control plane that learns from coding-AI sessions: captures context, detects failures, distills lessons, and proposes `AGENTS.md` updates. Six-tool MCP server, drift alarms, rollback.
+- **[BoardVault](https://github.com/subkoks/apple-all-schematic)** — macOS desktop app and CLI that downloads and organizes Apple-device schematics and boardviews from public Telegram channels. Native SwiftUI interface now shipping beside the Qt build.
+- **[BiQuadMonitor](https://github.com/subkoks/BiQuadMonitor)** — Native macOS menu-bar monitor for supported Cudy cellular routers: live SINR / RSRQ / RSRP / RSSI, antenna trial logging, saved measurement history. Unsigned Universal release.
+- **[hacker-agent](https://github.com/subkoks/hacker-agent)** — Permanent-memory security research and reverse-engineering toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP catalog, Stake Engine math helpers (Python 3.13 + `uv`).
+- **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** — Solana market research, architecture, and a master plan, with trading bots and scanners taking shape in **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)**.
 
 <h2><img alt="Projects" src="assets/labels/projects.svg"></h2>
 
-### 🤖 AI coding agents &amp; infrastructure
+### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> AI coding agents &amp; infrastructure
 
-- **[agents-md](https://github.com/subkoks/agents-md)** · `Shell` ⭐ — Canonical cross-editor agent OS on the GOTCHA framework. Crypto/web3/Solana skill pack, drift-checked rule builds, production-grade scaffolding.
-- **[BEST-Self-Enhancement-Learning-AI](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** (BSELA) · `Python` ⭐ — Local control plane that learns from coding-AI sessions: capture → detect errors → distill lessons → propose `AGENTS.md` updates. Six-tool MCP server, drift alarms, rollback.
+- **[agents-md](https://github.com/subkoks/agents-md)** · `Shell` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Canonical cross-editor agent OS on the GOTCHA framework. Crypto/web3/Solana skill pack, drift-checked rule builds, production-grade scaffolding.
+- **[BEST-Self-Enhancement-Learning-AI](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** (BSELA) · `Python` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Local control plane that learns from coding-AI sessions: capture → detect errors → distill lessons → propose `AGENTS.md` updates. Six-tool MCP server, drift alarms, rollback.
+- **multi-agent-system-architecture-codex** — Multi-agent and loop architecture for the BLACK.TERMINAL Codex setup: planner, governor and builder agents, skill discovery, reversible installer. Private repo.
 
-### 🛡️ Security &amp; agent defense
+### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> Security &amp; agent defense
 
-- **[hacker-agent](https://github.com/subkoks/hacker-agent)** · `Python` ⭐ — Permanent-memory security research and reverse-engineering toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP catalog, Stake Engine math helpers.
+- **[hacker-agent](https://github.com/subkoks/hacker-agent)** · `Python` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Permanent-memory security research and reverse-engineering toolkit: SQLite memory, CVE / CISA KEV feeds, audit checklists, Ghidra MCP catalog, Stake Engine math helpers.
 - **[blackterminal-security](https://github.com/subkoks/blackterminal-security)** · `Shell` — Senior security-engineer instincts for AI coding agents: OWASP Top 10, CWE Top 25, secrets detection, IaC/CI hardening + read-only auditor agent. MIT.
 - **[prompt-injection-security](https://github.com/subkoks/prompt-injection-security)** · `Shell` — Prompt-injection defense for agent workflows: skeptical-reading skill, audit command, read-only auditor agent, offline scanner.
 
-### 🟢 Solana &amp; web3
+### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> Solana &amp; web3
 
 - **[SolanaIdeasLab](https://github.com/subkoks/SolanaIdeasLab)** · `Shell` — Market research, architecture docs, ideas tiers, and the master plan.
 - **[SolanaIdeasLab-projects](https://github.com/subkoks/SolanaIdeasLab-projects)** · `TypeScript` — Companion code: token-safety-bot, token-sniper-bot, wallet-tracker-pro, shared utilities.
 
-### 🍎 Native macOS apps
+### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> Native macOS apps
 
-- **[BoardVault](https://github.com/subkoks/apple-all-schematic)** · `Python` ⭐ — Apple schematic and boardview downloader: macOS desktop app (native SwiftUI, Qt 2.0 alongside) and CLI, sourcing from public Telegram channels.
+- **[BoardVault](https://github.com/subkoks/apple-all-schematic)** · `Python` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Apple schematic and boardview downloader: macOS desktop app (native SwiftUI, Qt 2.0 alongside) and CLI, sourcing from public Telegram channels.
 - **[BiQuadMonitor](https://github.com/subkoks/BiQuadMonitor)** · `Swift` — Menu-bar monitor and antenna experiment workspace for supported Cudy routers: live radio metrics, trial logging, saved measurements.
 
-### 🛠️ Automation &amp; tools
+### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> Automation &amp; tools
 
-- **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** · `Python` — Finds the fastest Stake.com mirror and the optimal NordVPN region for lowest latency. 🏓
+- **[stake-mirrors-ping](https://github.com/subkoks/stake-mirrors-ping)** · `Python` — Finds the fastest Stake.com mirror and the optimal NordVPN region for lowest latency.
 - **[about-me](https://github.com/subkoks/about-me)** · Extended about page — projects, stack, and links.
 
 <h2><img alt="Connect" src="assets/labels/connect.svg"></h2>

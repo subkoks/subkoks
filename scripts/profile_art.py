@@ -7,6 +7,7 @@ light and dark mode):
 
 * `assets/tagline.svg` — the two-line mono intro under the title.
 * `assets/labels/<slug>.svg` — uppercase micro-labels used inside `<h2>` tags.
+* `assets/marks/dot.svg` — the small orange dot used inline, in place of emoji.
 
 The text is static, so these are generated once and committed. Re-run after
 editing `LABELS` or `TAGLINE`:
@@ -16,6 +17,7 @@ editing `LABELS` or `TAGLINE`:
 
 from __future__ import annotations
 
+import math
 import pathlib
 from xml.sax.saxutils import escape
 
@@ -89,16 +91,57 @@ def tagline_svg() -> str:
     ) + "\n"
 
 
+def mark_svg() -> str:
+    """Small orange dot for inline use before headings and list groups."""
+    size = 12
+    return "\n".join(
+        [
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height="{size}"'
+            f' viewBox="0 0 {size} {size}" role="img" aria-hidden="true">',
+            f'<circle cx="{size / 2:g}" cy="{size / 2:g}" r="3.4" fill="{ACCENT}"/>',
+            "</svg>",
+        ]
+    ) + "\n"
+
+
+def star_svg() -> str:
+    """Small orange star, used inline for the repos that carry GitHub stars."""
+    size, outer, inner = 12, 5.2, 2.2
+    centre = size / 2
+    points = []
+    for index in range(10):
+        radius = outer if index % 2 == 0 else inner
+        angle = -math.pi / 2 + index * math.pi / 5
+        points.append(
+            f"{centre + radius * math.cos(angle):.2f},{centre + radius * math.sin(angle):.2f}"
+        )
+    return "\n".join(
+        [
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height="{size}"'
+            f' viewBox="0 0 {size} {size}" role="img" aria-hidden="true">',
+            f'<polygon points="{" ".join(points)}" fill="{ACCENT}"/>',
+            "</svg>",
+        ]
+    ) + "\n"
+
+
 def main() -> int:
     root = pathlib.Path(__file__).resolve().parent.parent
     labels_dir = root / "assets" / "labels"
     labels_dir.mkdir(parents=True, exist_ok=True)
+    marks_dir = root / "assets" / "marks"
+    marks_dir.mkdir(parents=True, exist_ok=True)
 
     (root / "assets" / "tagline.svg").write_text(tagline_svg(), encoding="utf-8")
+    (marks_dir / "dot.svg").write_text(mark_svg(), encoding="utf-8")
+    (marks_dir / "star.svg").write_text(star_svg(), encoding="utf-8")
     for slug, text in LABELS.items():
         (labels_dir / f"{slug}.svg").write_text(label_svg(text), encoding="utf-8")
 
-    print(f"wrote assets/tagline.svg and {len(LABELS)} label(s) to assets/labels/")
+    print(
+        f"wrote assets/tagline.svg, assets/marks/dot.svg, assets/marks/star.svg,"
+        f" and {len(LABELS)} label(s) to assets/labels/"
+    )
     return 0
 
 
