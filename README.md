@@ -20,12 +20,9 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 
 ## GitHub Activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/238636/subkoks">
-  <img alt="GitHub contribution graph for @subkoks" src="https://ghchart.rshah.org/238636/subkoks">
-</picture>
+<img alt="Contribution activity for @subkoks — orange on black" src="https://raw.githubusercontent.com/subkoks/subkoks/activity/activity.svg" width="100%">
 
-<!-- Fallback if ghchart breaks: https://streak-stats.demolab.com/?user=subkoks&theme=dark&hide_border=true -->
+<!-- Rendered by scripts/contrib_heatmap.py, refreshed weekly from the activity branch. Live fallback: https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=subkoks&theme=gruvbox&bg_color=000000&title_color=FF7F0E&icon_color=FF7F0E&text_color=E6E6E6 -->
 
 ## Currently building
 
@@ -65,4 +62,4 @@ Web3, local automation, practical scripts — deep in vibe-coding mode.
 [![GitHub](https://img.shields.io/badge/-subkoks-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/subkoks)
 <!-- Add blog / site badge here when black.terminal is live -->
 
-![Profile views](https://komarev.com/ghpvc/?username=subkoks&color=238636&style=flat-square&label=views)
+![Profile views](https://komarev.com/ghpvc/?username=subkoks&color=FF7F0E&style=flat-square&label=views)
