@@ -41,7 +41,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch --orphan activity
-          git rm -rq --cached .
+          # `git switch --orphan` may or may not leave the index populated
+          # depending on the git version, so clear it without failing when empty.
+          git rm -rq --cached --ignore-unmatch .
           cp "$RUNNER_TEMP/activity.svg" activity.svg
           git add -- activity.svg
           git commit -q -m "chore(activity): refresh contribution graph"
