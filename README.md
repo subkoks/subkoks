@@ -39,7 +39,7 @@
 
 - **[agents-md](https://github.com/subkoks/agents-md)** · `Shell` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Canonical cross-editor agent OS on the GOTCHA framework. Crypto/web3/Solana skill pack, drift-checked rule builds, production-grade scaffolding.
 - **[BEST-Self-Enhancement-Learning-AI](https://github.com/subkoks/BEST-Self-Enhancement-Learning-AI)** (BSELA) · `Python` <img alt="" src="assets/marks/star.svg" width="11" height="11"> — Local control plane that learns from coding-AI sessions: capture → detect errors → distill lessons → propose `AGENTS.md` updates. Six-tool MCP server, drift alarms, rollback.
-- **multi-agent-system-architecture-codex** — Multi-agent and loop architecture for the BLACK.TERMINAL Codex setup: planner, governor and builder agents, skill discovery, reversible installer. Private repo.
+- **[multi-agent-system-architecture-codex](https://github.com/subkoks/multi-agent-system-architecture-codex)** — Multi-agent and loop architecture for the BLACK.TERMINAL Codex setup: planner, governor and builder agents, skill discovery, reversible installer.
 
 ### <img alt="" src="assets/marks/dot.svg" width="11" height="11"> Security &amp; agent defense
 
