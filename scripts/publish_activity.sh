@@ -22,29 +22,40 @@ python3 "$repo_dir/scripts/contrib_heatmap.py" \
     --local-json "$work/local-activity.json" \
     --out "$work/activity.svg"
 
-# Skip the push (and the image-cache churn) when nothing actually changed.
-# Compared through the API rather than raw.githubusercontent.com, whose CDN
-# serves stale copies for a few minutes after a push.
-local_blob="$(git -C "$repo_dir" hash-object "$work/activity.svg")"
-remote_blob="$(gh api "repos/$user/subkoks/contents/activity.svg?ref=$branch" \
-    --jq .sha 2>/dev/null || true)"
-if [ -n "$remote_blob" ] && [ "$remote_blob" = "$local_blob" ]; then
-    echo "activity graph unchanged; nothing to publish"
-    exit 0
-fi
-
-cd "$work"
+mkdir "$work/repo"
+cd "$work/repo"
 git init -q -b "$branch"
 git config user.name "black.terminal"
 git config user.email "subkoks@users.noreply.github.com"
-git add activity.svg local-activity.json
-# Machine-generated commit on a throwaway branch: no need to touch the SSH key.
-git -c commit.gpgsign=false commit -q -m "chore(activity): refresh GitHub + local activity graph"
 
 # HTTPS with the gh credential helper: the agent may run without an ssh-agent,
-# so the global https->ssh url rewrite is overridden for this one push.
-git -c credential.helper= -c credential.helper='!gh auth git-credential' \
-    -c "url.$repo_url.insteadOf=$repo_url" \
-    push -q --force "$repo_url" "$branch"
+# so the global https->ssh url rewrite is overridden for these remote operations.
+remote_git() {
+    git -c credential.helper= -c credential.helper='!gh auth git-credential' \
+        -c "url.$repo_url.insteadOf=$repo_url" "$@"
+}
+
+if remote_git ls-remote --exit-code --heads "$repo_url" "refs/heads/$branch" > /dev/null; then
+    remote_git fetch -q --depth=1 "$repo_url" "refs/heads/$branch"
+    git switch -q --create "$branch" FETCH_HEAD
+else
+    status=$?
+    if [ "$status" -ne 2 ]; then
+        exit "$status"
+    fi
+fi
+
+cp "$work/activity.svg" activity.svg
+cp "$work/local-activity.json" local-activity.json
+git add activity.svg local-activity.json
+if git diff --cached --quiet; then
+    echo "activity graph and local counts unchanged; nothing to publish"
+    exit 0
+fi
+
+# Append to the published history without touching the SSH key.
+git -c commit.gpgsign=false commit -q -m "chore(activity): refresh GitHub + local activity graph"
+# A concurrent local/hosted update must fail rather than be overwritten.
+remote_git push -q "$repo_url" "HEAD:refs/heads/$branch"
 
 echo "published activity graph to $branch"

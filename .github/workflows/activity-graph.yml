@@ -29,8 +29,8 @@ jobs:
     name: publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.13"
       - name: Fetch published local counts
@@ -39,12 +39,25 @@ jobs:
           # Local activity (Codex turns, local commits) is collected on the Mac
           # and parked on this branch, so a weekly run keeps it instead of
           # dropping back to GitHub-only data.
-          if git fetch -q --depth=1 origin activity 2>/dev/null &&
-             git show FETCH_HEAD:local-activity.json > "$RUNNER_TEMP/local-activity.json" 2>/dev/null; then
-            echo "using published local counts"
+          if git ls-remote --exit-code --heads origin refs/heads/activity > /dev/null; then
+            # Fetch failures stop the run; never replace existing local counts
+            # with an empty snapshot after a transport/authentication failure.
+            git fetch -q --depth=1 origin refs/heads/activity
+            git rev-parse FETCH_HEAD > "$RUNNER_TEMP/activity-parent"
+            if git cat-file -e FETCH_HEAD:local-activity.json 2>/dev/null; then
+              git show FETCH_HEAD:local-activity.json > "$RUNNER_TEMP/local-activity.json"
+              echo "using published local counts"
+            else
+              echo "no local counts published yet; rendering GitHub only"
+              rm -f "$RUNNER_TEMP/local-activity.json"
+            fi
           else
-            echo "no local counts published yet; rendering GitHub only"
-            rm -f "$RUNNER_TEMP/local-activity.json"
+            status=$?
+            if [ "$status" -ne 2 ]; then
+              exit "$status"
+            fi
+            echo "activity branch does not exist yet; rendering GitHub only"
+            rm -f "$RUNNER_TEMP/local-activity.json" "$RUNNER_TEMP/activity-parent"
           fi
       - name: Render heatmap
         run: |
@@ -57,15 +70,22 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch --orphan activity
-          # `git switch --orphan` may or may not leave the index populated
-          # depending on the git version, so clear it without failing when empty.
-          git rm -rq --cached --ignore-unmatch .
+          if [ -f "$RUNNER_TEMP/activity-parent" ]; then
+            git switch --create activity "$(cat "$RUNNER_TEMP/activity-parent")"
+          else
+            git switch --orphan activity
+            git rm -rq --cached --ignore-unmatch .
+          fi
           cp "$RUNNER_TEMP/activity.svg" activity.svg
           git add -- activity.svg
           if [ -f "$RUNNER_TEMP/local-activity.json" ]; then
             cp "$RUNNER_TEMP/local-activity.json" local-activity.json
             git add -- local-activity.json
           fi
+          if git diff --cached --quiet; then
+            echo "activity graph is unchanged"
+            exit 0
+          fi
           git commit -q -m "chore(activity): refresh contribution graph"
-          git push -q --force origin activity
+          # Reject concurrent updates instead of overwriting their counts/history.
+          git push -q origin HEAD:refs/heads/activity
